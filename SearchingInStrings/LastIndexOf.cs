@@ -14,9 +14,7 @@ namespace SearchingInStrings
         /// <returns>The zero-based index position of <see cref="value"/> if that character is found, or -1 if it is not.</returns>
         public static int GetLastIndexOfChar(string str, char value)
         {
-            // TODO #3-1. Implement the method using String.LastIndexOf instance method.
-            // See String.LastIndexOf method documentation page: https://docs.microsoft.com/en-us/dotnet/api/system.string.lastindexof
-            throw new NotImplementedException();
+            return str.LastIndexOf(value);
         }
 
         /// <summary>
@@ -25,9 +23,7 @@ namespace SearchingInStrings
         /// <returns>The zero-based index position of <paramref name="value"/> if that character is found, or -1 if it is not found or if the current instance equals <see cref="string.Empty"/>.</returns>
         public static int GetLastIndexOfChar(string str, char value, int startIndex)
         {
-            // TODO #3-2. Implement the method using String.LastIndexOf instance method.
-            // See String.LastIndexOf method documentation page: https://docs.microsoft.com/en-us/dotnet/api/system.string.lastindexof
-            throw new NotImplementedException();
+            return str.LastIndexOf(value, startIndex);
         }
 
         /// <summary>
@@ -36,9 +32,7 @@ namespace SearchingInStrings
         /// <returns>The zero-based index position of <paramref name="value"/> if that character is found, or -1 if it is not found or if the current instance equals <see cref="string.Empty"/>.</returns>
         public static int GetLastIndexOfChar(string str, char value, int startIndex, int count)
         {
-            // TODO #3-3. Implement the method using String.LastIndexOf instance method.
-            // See String.LastIndexOf method documentation page: https://docs.microsoft.com/en-us/dotnet/api/system.string.lastindexof
-            throw new NotImplementedException();
+            return str.LastIndexOf(value, startIndex, count);
         }
 
         /// <summary>
@@ -47,9 +41,7 @@ namespace SearchingInStrings
         /// <returns>The zero-based index position of <paramref name="value"/> if that string is found, or -1 if it is not. If value is <see cref="string.Empty"/>, the return <paramref name="value"/> is 0.</returns>
         public static int GetLastIndexOfString(string str, string value)
         {
-            // TODO #3-4. Implement the method using String.LastIndexOf instance method.
-            // See String.LastIndexOf method documentation page: https://docs.microsoft.com/en-us/dotnet/api/system.string.lastindexof
-            throw new NotImplementedException();
+            return str.LastIndexOf(value);
         }
 
         /// <summary>
@@ -58,11 +50,7 @@ namespace SearchingInStrings
         /// <returns>The index position of the <paramref name="value"/> parameter if that string is found, or -1 if it is not. If <paramref name="value"/> is Empty, the return value is 0.</returns>
         public static int GetLastIndexOfStringOrdinal(string str, string value)
         {
-            // TODO #3-5. Implement the method using String.LastIndexOf instance method. Analyze the unit tests, and use the correct StringComparison enumeration value.
-            // See String.LastIndexOf and StringComparison documentation pages:
-            // * https://docs.microsoft.com/en-us/dotnet/api/system.string.lastindexof
-            // * https://docs.microsoft.com/en-us/dotnet/api/system.stringcomparison
-            throw new NotImplementedException();
+            return str.LastIndexOf(value, StringComparison.Ordinal);
         }
 
         /// <summary>
@@ -71,11 +59,7 @@ namespace SearchingInStrings
         /// <returns>The index position of the <paramref name="value"/> parameter if that string is found, or -1 if it is not. If <paramref name="value"/> is Empty, the return value is 0.</returns>
         public static int GetLastIndexOfStringWithStringComparison(string str, string value)
         {
-            // TODO #3-6. Implement the method using String.LastIndexOf instance method. Analyze the unit tests, and use the correct StringComparison enumeration value.
-            // See String.LastIndexOf and StringComparison documentation pages:
-            // * https://docs.microsoft.com/en-us/dotnet/api/system.string.lastindexof
-            // * https://docs.microsoft.com/en-us/dotnet/api/system.stringcomparison
-            throw new NotImplementedException();
+            return str.LastIndexOf(value, StringComparison.InvariantCulture);
         }
 
         /// <summary>
@@ -84,9 +68,7 @@ namespace SearchingInStrings
         /// <returns>The zero-based index position of <paramref name="value"/> from the start of the current instance if that string is found, or -1 if it is not. If value is <see cref="string.Empty"/>, the return <paramref name="value"/> is <paramref name="startIndex"/>.</returns>
         public static int GetLastIndexOfString(string str, string value, int startIndex)
         {
-            // TODO #3-7. Implement the method using String.LastIndexOf instance method.
-            // See String.LastIndexOf method documentation page: https://docs.microsoft.com/en-us/dotnet/api/system.string.lastindexof
-            throw new NotImplementedException();
+            return str.LastIndexOf(value, startIndex);
         }
 
         /// <summary>
@@ -95,11 +77,7 @@ namespace SearchingInStrings
         /// <returns>The zero-based index position of <paramref name="value"/> from the start of the current instance if that string is found, or -1 if it is not. If value is <see cref="string.Empty"/>, the return <paramref name="value"/> is <paramref name="startIndex"/>.</returns>
         public static int GetLastIndexOfStringCurrentCultureIgnoreCase(string str, string value, int startIndex)
         {
-            // TODO #3-8. Implement the method using String.LastIndexOf instance method. Analyze the unit tests, and use the correct StringComparison enumeration value.
-            // See String.LastIndexOf and StringComparison documentation pages:
-            // * https://docs.microsoft.com/en-us/dotnet/api/system.string.lastindexof
-            // * https://docs.microsoft.com/en-us/dotnet/api/system.stringcomparison
-            throw new NotImplementedException();
+            return str.LastIndexOf(value, startIndex, StringComparison.CurrentCultureIgnoreCase);
         }
 
         /// <summary>
@@ -108,11 +86,7 @@ namespace SearchingInStrings
         /// <returns>The zero-based index position of <paramref name="value"/> from the start of the current instance if that string is found, or -1 if it is not. If value is <see cref="string.Empty"/>, the return <paramref name="value"/> is <paramref name="startIndex"/>.</returns>
         public static int GetLastIndexOfStringWithStringComparison(string str, string value, int startIndex)
         {
-            // TODO #3-9. Implement the method using String.LastIndexOf instance method. Analyze the unit tests, and use the correct StringComparison enumeration value.
-            // See String.LastIndexOf and StringComparison documentation pages:
-            // * https://docs.microsoft.com/en-us/dotnet/api/system.string.lastindexof
-            // * https://docs.microsoft.com/en-us/dotnet/api/system.stringcomparison
-            throw new NotImplementedException();
+            return str.LastIndexOf(value, startIndex, StringComparison.CurrentCulture);
         }
 
         /// <summary>
@@ -121,9 +95,7 @@ namespace SearchingInStrings
         /// <returns>The zero-based index position of <paramref name="value"/> from the start of the current instance if that string is found, or -1 if it is not. If value is <see cref="string.Empty"/>, the return <paramref name="value"/> is <paramref name="startIndex"/>.</returns>
         public static int GetLastIndexOfString(string str, string value, int startIndex, int count)
         {
-            // TODO #3-10. Implement the method using String.LastIndexOf instance method.
-            // See String.LastIndexOf method documentation page: https://docs.microsoft.com/en-us/dotnet/api/system.string.lastindexof
-            throw new NotImplementedException();
+            return str.LastIndexOf(value, startIndex, count, StringComparison.CurrentCulture);
         }
 
         /// <summary>
@@ -132,11 +104,7 @@ namespace SearchingInStrings
         /// <returns>The zero-based index position of <paramref name="value"/> from the start of the current instance if that string is found, or -1 if it is not. If value is <see cref="string.Empty"/>, the return <paramref name="value"/> is <paramref name="startIndex"/>.</returns>
         public static int GetLastIndexOfStringInvariantCulture(string str, string value, int startIndex, int count)
         {
-            // TODO #3-11. Implement the method using String.LastIndexOf instance method. Analyze the unit tests, and use the correct StringComparison enumeration value.
-            // See String.LastIndexOf and StringComparison documentation pages:
-            // * https://docs.microsoft.com/en-us/dotnet/api/system.string.lastindexof
-            // * https://docs.microsoft.com/en-us/dotnet/api/system.stringcomparison
-            throw new NotImplementedException();
+            return str.LastIndexOf(value, startIndex, count, StringComparison.InvariantCulture);
         }
 
         /// <summary>
@@ -145,11 +113,7 @@ namespace SearchingInStrings
         /// <returns>The zero-based index position of <paramref name="value"/> from the start of the current instance if that string is found, or -1 if it is not. If value is <see cref="string.Empty"/>, the return <paramref name="value"/> is <paramref name="startIndex"/>.</returns>
         public static int GetLastIndexOfStringWithStringComparison(string str, string value, int startIndex, int count)
         {
-            // TODO #3-12. Implement the method using String.LastIndexOf instance method. Analyze the unit tests, and use the correct StringComparison enumeration value.
-            // See String.LastIndexOf and StringComparison documentation pages:
-            // * https://docs.microsoft.com/en-us/dotnet/api/system.string.lastindexof
-            // * https://docs.microsoft.com/en-us/dotnet/api/system.stringcomparison
-            throw new NotImplementedException();
+            return str.LastIndexOf(value, startIndex, count, StringComparison.CurrentCultureIgnoreCase);
         }
     }
 }
